@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FaTrash, FaEdit } from "react-icons/fa";
-const ADMIN_PASSWORD = "admin123"; // Change this to your desired admin password
+const ADMIN_PASSWORD = process.env.REACT_APP_ADMIN_PASSWORD; // Change this to your desired admin password
 
 export default function AdminPanel() {
   const [showModal, setShowModal] = useState(true);
